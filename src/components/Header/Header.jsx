@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
-import Logo from "../images/Logo.png";
-import AssistanceIcon from "../images/AssistanceIcon.png";
-import { HeaderWrapper } from "../components/Header.style";
+import "../../App.css";
+import Logo from "../../assets/images/Logo.png";
+import AssistanceIcon from "../../assets/images/AssistanceIcon.png";
+import { HeaderWrapper } from "./Header.style";
 
 const Header = () => {
   return (
