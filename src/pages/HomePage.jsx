@@ -1,10 +1,17 @@
 import React from "react";
-import Header from "../components/header/Header";
+
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+
 
 const HomePage = () => {
   return (
     <>
       <Header />
+
+      <Footer />
+
+
     </>
   );
 };
