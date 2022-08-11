@@ -5,3 +5,27 @@
 
   font-family: "Manrope", sans-serif;
 }
+
+:root {
+  --black: #1e1b1b;
+  --white: #fff;
+  --primary: #ff6433;
+  --secondary: #661ce7;
+  --mint: #00d289;
+  --steelgrey: #e2e6e9;
+  --lightgrey: #e2e6e9;
+
+  --font-size1: 64px;
+  --font-size2: 58px;
+  --font-size3: 48px;
+  --font-size4: 40px;
+  --font-size5: 32px;
+  --font-size6: 20px;
+  --font-size7: 18px;
+  --font-size8: 16px;
+
+  --font-weight1: 800;
+  --font-weight2: 700;
+  --font-weight3: 600;
+  --font-weight4: 500;
+}

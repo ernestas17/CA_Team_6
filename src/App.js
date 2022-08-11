@@ -15,7 +15,7 @@ function App() {
         <Route path="services" element={<ServicesPage />}></Route>
         <Route path="blog" element={<BlogPage />}></Route>
         <Route path="contact" element={<ContactPage />}></Route>
-      </Routes>{" "}
+      </Routes>
     </div>
   );
 }
