@@ -1,5 +1,12 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/images/FooterLogo.png";
+import StyledContainer from "../../shared/styles/Container.style";
+import {
+  footerContactData,
+  headline,
+  copyright,
+  footerMediaData,
+} from "../../data/footerData";
 import {
   StyledFooter,
   StyledFooterTop,
@@ -7,85 +14,53 @@ import {
   StyledSocials,
   StyledFooterLeft,
   StyledFooterRight,
-  StyledFooterNav,
   StyledCopyright,
-  StyledFooterTopWrapper,
   StyledFooterBottomWrapper,
+  StyledHeadline,
+  StyledTitle,
+  StyledSubTitle,
+  StyledTitlesWrapper,
 } from "./Footer.style";
+
+import Navigation from "../Navigation";
 
 const Footer = () => {
   return (
     <StyledFooter>
-      <StyledFooterTopWrapper>
+      <StyledContainer>
         <StyledFooterTop>
           <StyledFooterLeft>
-            <h3>Get in touch with us for your service</h3>
+            <StyledHeadline>{headline}</StyledHeadline>
             <StyledSocials>
               <ul>
-                <li>
-                  <a href="https://www.facebook.com/">
-                    <i className="fa-brands fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/">
-                    <i className="fa-brands fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/">
-                    <i className="fa-brands fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/">
-                    <i className="fa-brands fa-linkedin"></i>
-                  </a>
-                </li>
+                {footerMediaData.map((media, index) => (
+                  <li key={index}>
+                    <a href={media.link}>{media.icon}</a>
+                  </li>
+                ))}
               </ul>
             </StyledSocials>
           </StyledFooterLeft>
           <StyledFooterRight>
-            <div>
-              <p>Help line Noumber</p>
-              <p>1800 265 24 52</p>
-            </div>
-            <div>
-              <p>Address</p>
-              <p>NH 234 Public Square San Francisco 65368</p>
-            </div>
-            <div>
-              <p>We are open</p>
-              <p>Monday to Friday 9:00 AM to 10:00 AM</p>
-            </div>
+            {footerContactData.map((info) => (
+              <StyledTitlesWrapper key={info.body}>
+                <StyledTitle>{info.body}</StyledTitle>
+                <StyledSubTitle>{info.title}</StyledSubTitle>
+              </StyledTitlesWrapper>
+            ))}
           </StyledFooterRight>
         </StyledFooterTop>
-      </StyledFooterTopWrapper>
+      </StyledContainer>
+
       <StyledFooterBottomWrapper>
         <StyledFooterBottom>
-          <div>
+          <Link to={"/"}>
             <img src={logo} alt={logo} />
-          </div>
-          <StyledFooterNav>
-            <ul>
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/">About us</a>
-              </li>
-              <li>
-                <a href="/">Services</a>
-              </li>
-              <li>
-                <a href="/">Blog</a>
-              </li>
-              <li>
-                <a href="/">Contact us</a>
-              </li>
-            </ul>
-          </StyledFooterNav>
-          <StyledCopyright>&#64; Copyright Finsweet 2021</StyledCopyright>
+          </Link>
+
+          <Navigation width={"459px"} footerText />
+
+          <StyledCopyright>&#64; {copyright}</StyledCopyright>
         </StyledFooterBottom>
       </StyledFooterBottomWrapper>
     </StyledFooter>

@@ -1,57 +1,57 @@
 import styled from "styled-components";
+import StyledContainer from "../../shared/styles/Container.style";
+import {
+  StyledH3,
+  StyledBody1,
+  StyledTitle02,
+  StyledBody2,
+} from "../../shared/styles/Fonts.style";
 
 // Mobile first
 export const StyledFooter = styled.footer`
   width: calc(100vw - (100vw - 100%));
+  background-color: rgba(30, 27, 27, 0.98);
 
-  color: #fff;
+  color: var(--white);
   a {
     color: inherit;
   }
 `;
 
-export const StyledFooterTopWrapper = styled.div`
-  background-color: rgba(30, 27, 27, 0.98);
-`;
-
 export const StyledFooterTop = styled.div`
-  max-width: 1280px;
-  margin: 0 auto;
   text-align: center;
-  padding: 20px 20px;
+  padding: 20px 0;
 
   @media screen and (min-width: 768px) {
     display: flex;
     text-align: left;
-    gap: 8px;
+    gap: 40px;
   }
   @media screen and (min-width: 1024px) {
     height: 549px;
-    padding: 128px 0;
+    padding-top: 128px;
     gap: 193px;
   }
 `;
 
-export const StyledFooterLeft = styled.section`
+export const StyledFooterLeft = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  h3 {
-    font-size: 30px;
-    letter-spacing: -0.03em;
-    line-height: 140%;
-  }
+
   @media screen and (min-width: 768px) {
-    text-align: left;
     gap: 64px;
     align-items: start;
-    h3 {
-      font-size: 48px;
-    }
   }
   @media screen and (min-width: 1024px) {
     width: 463px;
+  }
+`;
+
+export const StyledHeadline = styled(StyledH3)`
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
   }
 `;
 
@@ -66,9 +66,6 @@ export const StyledSocials = styled.div`
     li {
       a {
         display: flex;
-        i {
-          font-size: 1.5em;
-        }
       }
     }
   }
@@ -80,75 +77,44 @@ export const StyledSocials = styled.div`
   }
 `;
 
-export const StyledFooterRight = styled.section`
+export const StyledFooterRight = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    p:nth-child(1) {
-      font-size: 18px;
-      font-weight: 600;
-      opacity: 0.6;
-      line-height: 175%;
-    }
-    p:nth-child(2) {
-      font-size: 24px;
-      font-weight: 600;
-      letter-spacing: -0.03em;
-      line-height: 36px;
-    }
-  }
+
   @media screen and (min-width: 1024px) {
     width: 471px;
   }
 `;
-
+export const StyledTitlesWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+export const StyledTitle = styled(StyledBody1)``;
+export const StyledSubTitle = styled(StyledTitle02)``;
 export const StyledFooterBottomWrapper = styled.div`
   background-color: #1e1b1b;
 `;
 
-export const StyledFooterBottom = styled.div`
-  max-width: 1280px;
-  margin: 0 auto;
+export const StyledFooterBottom = styled(StyledContainer)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 20px;
-
   gap: 20px;
+
+  padding: 20px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
   }
   @media screen and (min-width: 1024px) {
-    padding: 64px 0;
-    line-height: 28px;
+    padding: 64px 20px;
+    height: 157px;
   }
 `;
 
-export const StyledFooterNav = styled.nav`
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  @media screen and (min-width: 768px) {
-    ul {
-      width: 459px;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-`;
-
-export const StyledCopyright = styled.p`
-  font-size: 16px;
-  font-weight: 600;
+export const StyledCopyright = styled(StyledBody2)`
   color: #939191;
+  opacity: 1;
 `;
