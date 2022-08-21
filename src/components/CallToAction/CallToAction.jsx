@@ -10,7 +10,7 @@ const CallToAction = () => {
       <img className="CTA1Style" src={CTA1} alt="" />
       <div className="centerContainer">
         <h3>Get in touch with us for your service related query</h3>
-        <Button color={false} text={"Contact us"} />
+        <Button color={""} text={"Contact us"} />
       </div>
       <img className="CTA2Style" src={CTA2} alt="" />
     </CallToActionContainer>
