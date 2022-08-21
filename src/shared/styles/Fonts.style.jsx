@@ -47,12 +47,16 @@ export const StyledTitle01 = styled.p`
 `;
 
 export const StyledTitle02 = styled.p`
-  @media screen and (min-width: 1024px) {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 600;
-    letter-spacing: -0.03em;
-  }
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+`;
+
+export const StyledBodyMed1 = styled.p`
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 175%;
 `;
 
 export const StyledBody1 = styled.p`
@@ -62,11 +66,23 @@ export const StyledBody1 = styled.p`
   opacity: 0.6;
 `;
 
+export const StyledBodyMed2 = styled.p`
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+`;
+
 export const StyledBody2 = styled.p`
   font-size: 16px;
   font-weight: 600;
   line-height: 28px;
   opacity: 0.6;
+`;
+
+export const StyledCaption = styled.p`
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 `;
 
 export const StyledLinkFont = css`
