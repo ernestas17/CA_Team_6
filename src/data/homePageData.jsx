@@ -111,14 +111,14 @@ export const offerData = {
   linkText: "Learn about services",
   icon: <ArrowIcon />,
   offerGridData: [
-    { icon: <CarIcon />, text: "Diagnostics" },
-    { icon: <EngineIcon />, text: "Engine Repair" },
-    { icon: <WheelIcon />, text: "Wheel Repair" },
-    { icon: <OilIcon />, text: "Oil Filter" },
-    { icon: <Car2Icon />, text: "Body Work" },
-    { icon: <BatteriesIcon />, text: "Batteries" },
-    { icon: <InsuranceIcon />, text: "Insurance Claim" },
-    { icon: <WrenchIcon />, text: "Custom Service" },
+    { icon: <CarIcon />, text: "Diagnostics", to: "auto-diagnostics" },
+    { icon: <EngineIcon />, text: "Engine Repair", to: "engine-repair" },
+    { icon: <WheelIcon />, text: "Wheel Repair", to: "wheel-repair" },
+    { icon: <OilIcon />, text: "Oil Filter", to: "oil-filter" },
+    { icon: <Car2Icon />, text: "Body Work", to: "body-work" },
+    { icon: <BatteriesIcon />, text: "Batteries", to: "batteries" },
+    { icon: <InsuranceIcon />, text: "Insurance Claim", to: "insurance-claim" },
+    { icon: <WrenchIcon />, text: "Custom Service", to: "custom-service" },
   ],
 };
 
