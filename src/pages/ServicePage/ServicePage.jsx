@@ -17,6 +17,7 @@ import {
   ServiceHeadline,
   StyledWrapper,
 } from "./ServicePage.style";
+import CallToAction from "../../components/CallToAction/CallToAction";
 
 const ServicePage = () => {
   const { service } = useParams();
@@ -32,6 +33,7 @@ const ServicePage = () => {
           <Content content={match} />
         </ContentWrapper>
       </StyledWrapper>
+      <CallToAction />
     </main>
   );
 };
