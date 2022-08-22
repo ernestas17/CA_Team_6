@@ -24,10 +24,15 @@ const Offer = () => {
       <StyledHeadline>{headline}</StyledHeadline>
       <StyledOfferWrapper>
         {offerGridData.map((data) => (
-          <Card key={data.text} icon={data.icon} text={data.text} />
+          <Card
+            key={data.text}
+            icon={data.icon}
+            text={data.text}
+            path={data.to}
+          />
         ))}
       </StyledOfferWrapper>
-      <StyledLink to={"/"}>
+      <StyledLink to={"services"}>
         <StyledLinkText>{linkText}</StyledLinkText>
         {icon}
       </StyledLink>
