@@ -31,12 +31,12 @@ export const servicesData = {
   linkText: "See service details",
   icon: <ArrowIcon />,
   services: [
-    { icon: <CarIcon />, text: "Auto Dignostics" },
-    { icon: <EngineIcon />, text: "Engine Repair" },
-    { icon: <Car2Icon />, text: "Body Work" },
-    { icon: <BatteriesIcon />, text: "Batteries" },
-    { icon: <CarIcon />, text: "Car wash" },
-    { icon: <EngineIcon />, text: "AC Repair" },
+    { icon: <CarIcon />, text: "Auto Dignostics", to: "auto-diagnostics" },
+    { icon: <EngineIcon />, text: "Engine Repair", to: "engine-repair" },
+    { icon: <Car2Icon />, text: "Body Work", to: "body-work" },
+    { icon: <BatteriesIcon />, text: "Batteries", to: "batteries" },
+    { icon: <CarIcon />, text: "Car wash", to: "car-wash" },
+    { icon: <EngineIcon />, text: "AC Repair", to: "ac-repair" },
   ],
 };
 
