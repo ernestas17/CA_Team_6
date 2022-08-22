@@ -12,6 +12,9 @@ const CallToActionContainer = styled.section`
     align-items: center;
     justify-content: space-evenly;
   }
+  a {
+    color: #fff;
+  }
   .CTA1Style,
   .CTA2Style {
     width: 100%;
