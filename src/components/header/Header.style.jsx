@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
   display: flex;
-  max-width: 1320px;
-  margin: 0 auto;
+  width: 100%;
   height: 45px;
-  padding: 20px;
-  justify-content: space-between;
+  padding: 20px 0;
+  justify-content: space-around;
 
   .logo {
     width: 80px;
@@ -35,7 +34,7 @@ export const HeaderWrapper = styled.div`
   }
 
   @media only screen and (min-width: 728px) {
-    padding: 0 20px;
+    padding: 0;
     height: 90px;
 
     li {
