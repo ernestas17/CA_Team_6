@@ -1,6 +1,5 @@
 // Data
 import { servicesData } from "../../../../data/servicesPageData";
-
 // Components
 import Card from "../../../../components/Card";
 
@@ -32,7 +31,7 @@ const Services = () => {
         </StyledImageContainer>
         <StyledHeadline>{headline}</StyledHeadline>
         <StyledBodyText>{text}</StyledBodyText>
-        <StyledLink to={"/"}>
+        <StyledLink to={`${services[0].to}`}>
           <StyledLinkText>{linkText}</StyledLinkText>
           {icon}
         </StyledLink>
@@ -40,7 +39,12 @@ const Services = () => {
 
       <StyledServicesRight>
         {services.map((service, index) => (
-          <Card key={index} icon={service.icon} text={service.text} />
+          <Card
+            key={index}
+            icon={service.icon}
+            text={service.text}
+            path={service.to}
+          />
         ))}
       </StyledServicesRight>
     </StyledWrapper>
