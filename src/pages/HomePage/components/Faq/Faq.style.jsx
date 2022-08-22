@@ -30,6 +30,7 @@ export const StyledFaqCard = styled.div`
   padding: 32px 40px;
 
   &:hover {
+    cursor: pointer;
     svg {
       border-radius: 14px;
     }

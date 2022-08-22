@@ -16,7 +16,9 @@ export const StyledContentParagraph = styled(StyledBody2)`
   white-space: pre-line;
   margin-bottom: ${({ margin }) => `${margin}px`};
 `;
-export const StyledContentTitle = styled(StyledTitle01)``;
+export const StyledContentTitle = styled(StyledTitle01)`
+  margin-bottom: 24px;
+`;
 export const StyledContentQoute = styled(StyledBody1)`
   color: #232536;
   border-left: 3px solid #1e1b1b;
