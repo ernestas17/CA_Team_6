@@ -6,7 +6,6 @@ const CallToActionContainer = styled.section`
   .centerContainer {
     height: 502px;
     background-color: var(--primary);
-    margin-bottom: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,6 +17,8 @@ const CallToActionContainer = styled.section`
   .CTA1Style,
   .CTA2Style {
     width: 100%;
+    height: 502px;
+    object-fit: cover;
   }
 
   h3 {
