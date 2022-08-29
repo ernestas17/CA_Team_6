@@ -4,9 +4,7 @@ export const HeaderWrapper = styled.div`
   display: flex;
   width: 100%;
   height: 45px;
-  padding: 20px 0;
-  justify-content: space-around;
-
+  justify-content: space-between;
   .logo {
     width: 80px;
     height: 20px;
@@ -26,7 +24,7 @@ export const HeaderWrapper = styled.div`
     font-size: 12px;
     font-weight: 600;
     line-height: 28px;
-    margin-left: 10px;
+    margin-left: 8px;
   }
   a {
     color: black;
@@ -38,7 +36,6 @@ export const HeaderWrapper = styled.div`
     height: 90px;
 
     li {
-      //   margin-left: 56px;
       margin-left: 32px;
       font-size: 16px;
     }
