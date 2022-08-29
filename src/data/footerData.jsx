@@ -1,3 +1,4 @@
+// Svgs imports
 import {
   FacebookIcon,
   TwitterIcon,

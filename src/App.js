@@ -1,21 +1,22 @@
+import { Suspense } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import ServicesPage from "./pages/ServicesPage";
-import BlogPage from "./pages/BlogPage";
-import ContactPage from "./pages/ContactPage";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import routes from "./data/routesData";
 
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route index element={<HomePage />}></Route>
-        <Route path="about" element={<AboutPage />}></Route>
-        <Route path="services" element={<ServicesPage />}></Route>
-        <Route path="blog" element={<BlogPage />}></Route>
-        <Route path="contact" element={<ContactPage />}></Route>
-      </Routes>
+      <Header />
+      <Suspense fallback={<p>Loading...</p>}>
+        <Routes>
+          {routes.map((route) => (
+            <Route key={route.to} path={route.to} element={route.element} />
+          ))}
+        </Routes>
+      </Suspense>
+      <Footer />
     </div>
   );
 }

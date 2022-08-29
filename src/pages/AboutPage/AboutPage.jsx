@@ -1,4 +1,5 @@
 import React from "react";
+
 // Components
 import Header from "../../components/Header";
 import APHeader from "./components/APHeader";
@@ -28,6 +29,7 @@ const AboutPage = () => {
       <Footer />
     </>
   );
+
 };
 
 export default AboutPage;

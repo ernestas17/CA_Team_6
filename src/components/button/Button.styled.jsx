@@ -10,6 +10,9 @@ const ButtonStyle = styled.button`
 
   color: var(--white);
   font-size: var(--font-size7);
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export default ButtonStyle;
