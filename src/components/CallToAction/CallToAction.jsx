@@ -1,6 +1,5 @@
-import React from "react";
-import CTA1 from "../../images/CTA1.png";
-import CTA2 from "../../images/CTA2.png";
+import CTA1 from "../../assets/images/CTA1.png";
+import CTA2 from "../../assets/images/CTA2.png";
 import CallToActionContainer from "./CallToAction.styled";
 import Button from "../Button/Button";
 
