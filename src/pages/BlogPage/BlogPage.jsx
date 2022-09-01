@@ -1,8 +1,25 @@
 import React from "react";
-import { StyledMaintenante } from "../AboutPage/AboutPage.style";
+
+// Styles
+import { StyledBackground } from "./BlogPage.style";
+
+//Components
+import BlogHeader from "./components/BlogHeader";
+import CallToAction from "../../components/CallToAction";
+import BlogFourSection from "./components/BlogFourSection";
+import { BlogFullSection } from "./components/BlogFullSection/BlogFullSection";
 
 const BlogPage = () => {
-  return <StyledMaintenante>Page is under maintenance</StyledMaintenante>;
+  return (
+    <div>
+      <BlogHeader />
+      <StyledBackground color={"#F5F5F5"}>
+        <BlogFourSection />
+      </StyledBackground>
+      <BlogFullSection />
+      <CallToAction />
+    </div>
+  );
 };
 
 export default BlogPage;
