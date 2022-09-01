@@ -6,6 +6,7 @@ const ServicesPage = React.lazy(() => import("../pages/ServicesPage"));
 const ServicePage = React.lazy(() => import("../pages/ServicePage"));
 const BlogPage = React.lazy(() => import("../pages/BlogPage"));
 const ContactPage = React.lazy(() => import("../pages/ContactPage"));
+const BlogSinglePage = React.lazy(() => import("../pages/BlogSinglePage"));
 
 export const routes = [
   { to: "/", text: "Home", element: <HomePage /> },
@@ -13,6 +14,7 @@ export const routes = [
   { to: "services", text: "Services", element: <ServicesPage /> },
   { to: "services/:service", text: null, element: <ServicePage /> },
   { to: "blog", text: "Blog", element: <BlogPage /> },
+  { to: "blog/:blogsingle", text: null, element: <BlogSinglePage /> },
   {
     to: "contact",
     text: ["Contact", "Contact Us"],
